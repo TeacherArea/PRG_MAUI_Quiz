@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRG_MAUI_Quiz.Pages.QuizBoard"
+             Title="QuizBoard"
+             BackgroundColor="NavajoWhite">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+
+        <Label Text="Välkommen till LBS quiz!"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0, 50, 0, 0"/>
+
+        <Label x:Name="QuestionLabel"
+               Text="- Frågan -"
+               FontSize="18"
+               Padding="10, 20"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="AnswerEntry"
+               Placeholder="Skriv ditt svar här"
+               FontSize="18"
+               HorizontalOptions="Center"
+               BackgroundColor="White"/>
+        <Label x:Name="ResultLabel"
+               Text=""
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="Green" />
+
+        <Button Text="Kontrollera svar"
+                Clicked="OnCheckAnswerClicked"
+                FontSize="18"
+                HorizontalOptions="Center" 
+                BackgroundColor="Grey"/>
+        
+        <Label x:Name="PointsLabel"
+               Text=""
+               FontSize="35"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
